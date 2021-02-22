@@ -1,0 +1,10 @@
+<h1 *ngIf="showCompanyName;else hideCompanyName">Tollplus Company</h1>
+
+<ng-template #hideCompanyName>
+    <h1>Company name is hidden</h1>
+</ng-template>
+
+<h3 *ngIf="showCompanyName; then showCompany; else hideCompanyName"></h3>
+<ng-template #showCompany>
+Tollplus India Limited
+</ng-template>

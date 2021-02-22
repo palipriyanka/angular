@@ -1,0 +1,17 @@
+<h1 style="background-color: grey;">Tollplus India Private Limited</h1>
+
+<h1 [ngStyle]="{'background-color': 'grey'}">Tollplus India Private Limited</h1>
+
+<h1 [ngStyle]="{'background-color': dynamiccolor}">Tollplus India Private Limited</h1>
+
+
+<!-- <h2>The server with id {{serverid}} and status is {{geterverStatus()}}</h2> -->
+
+<h2 [ngStyle]="{'background-color': getColor() }" [ngClass]="{'online':isServerOnline }">
+    The server with id: {{ serverid }} status is: {{ serverstatus }}
+</h2>
+
+<h1 class="online">Tollplus</h1>
+
+<h1 [ngClass]="{'online1': showOnline}">N.Priyanka is working in Tollplus</h1>
+
